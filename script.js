@@ -265,6 +265,7 @@ function bubbleChart(id, shoeName)
 
 window.onload = function () {
   multi_series_chart('chartContainer', shoeInView);
+  $wrapper.classList.toggle('toggled');
 };
 
 function selectedShoe(shoeName)
@@ -298,5 +299,6 @@ function displayChart(chartName)
   {
     bubbleChart('chartContainer', shoeInView);
   }
+  $wrapper.classList.toggle('toggled');
 }
 
