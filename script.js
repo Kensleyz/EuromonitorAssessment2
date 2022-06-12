@@ -299,6 +299,9 @@ function displayChart(chartName)
   {
     bubbleChart('chartContainer', shoeInView);
   }
-  $wrapper.classList.toggle('toggled');
+  if($("#wrapper").hasClass("toggled"))
+  {
+    $wrapper.classList.toggle('toggled');
+  }
 }
 
